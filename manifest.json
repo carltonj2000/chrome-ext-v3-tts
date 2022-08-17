@@ -1,0 +1,21 @@
+{
+  "name": "Speak!",
+  "description": "A Google Chrome extension for text to speech!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "/assets/icons/icon48.png",
+    "128": "/assets/icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icons": {
+      "48": "/assets/icons/icon48.png",
+      "128": "/assets/icons/icon128.png"
+    }
+  },
+  "permissions": ["contextMenus", "tts", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
